@@ -1,20 +1,30 @@
-<div class="card text-center cardContainer">
+<div *ngIf="usuarioLogeado && mostrarChat" chatIconContainer><img src="https://cdn-icons-png.flaticon.com/512/1646/1646781.png"class="chatIcon"alt=""> </div>
+
+<div class="card text-center cardContainer" *ngIf="usuarioLogeado">
     <div class="card-header">
       CHAT
+    <div class ="closeIcon" (click)="mostrarChat=false">X</div>
     </div>
+     
     <div class="card-body">
-      
-
+      <div id ="contenedorDeMensajes" class="contenedorDeMensajes h-25">
+        <p *ngFor="let mensaje of mensajes" class ="mesj p-2"
+        [ngClass]="(usuarioLogeado.uid==mensaje.emisor)?'enviado' : 'recibido'"
+        >
+        {{mensaje.texto}}
+        </p>
+        
+      </div>  
 
     </div>
+    
     <form class="card-footer text-muted input-group" (ngSubmit)="enviarMensaje()">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Ingrese su mensaje" [(ngModel)]="nuevoMensaje" [ngModelOptions]="{standalone: true}">
-            <div class="input-group-append">
-              <span class="input-group-text" id="basic-addon2"><img src="https://icons-for-free.com/download-icon-send+icon-1320185654900887696_512.png" width="20px" alt=""></span>
-            </div>
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Ingrese su mensaje" [(ngModel)]="nuevoMensaje" [ngModelOptions]="{standalone: true}">
+          <div class="input-group-append" (click)="enviarMensaje()">
+            <span class="input-group-text" id="basic-addon2"><img class="imgEnviar" src="https://icons-for-free.com/download-icon-send+icon-1320185654900887696_512.png" width="20px" alt=""></span>
           </div>
-
-
-        </form>
+        </div>
+  </form> 
+ 
   </div>
