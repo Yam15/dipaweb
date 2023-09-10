@@ -1,0 +1,22 @@
+.cardContainer{
+ 
+width: 300px;
+height: 500px;
+position:fixed;
+right: 1px;
+bottom: 0.9rem; 
+}
+
+.card-header{
+
+    background-color: rgb(116, 116, 197);
+    color: white;
+    font-weight: 700;
+
+}
+
+.card-body{
+
+    padding: 0.5rem;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVdJzmNL4tKw03S9I1S5_cntgmvuoxADNiNf5M4UbIVJCgww_dMYlJnaQyqxxvMzlT1U&usqp=CAU);
+}

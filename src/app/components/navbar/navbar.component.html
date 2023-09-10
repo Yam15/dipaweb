@@ -1,0 +1,29 @@
+<nav class="navbar navbar-light bg-light " style="padding: 0 1rem; box-shadow:  0 0 5px -1px gray;">
+    <a class="navbar-brand" href="#" style="display: flex; align-items: center;">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdjJ7IhchXuM7SEYkeW1XKdmj6zv6nQSIhg3YLeFar7AXkAG0G1uheXbtKOj7z_EBhxYPX_yZAFlVetqJKGMPednZGZNiEI8BypJeIunHDM_BM4oOSfBdtbBNWPIj_B5eJD2f_S_2ccIbn0Axqw0RLOgnf26M5nKVqizfR4RDWFfdUI9GkWyOW0g1O/s2202/Logo%20PNC%20(1).png"
+            width="50" height="50" class="d-inline-block align-top" alt="">
+        
+    DIPAWEB</a>
+
+
+    <div ngbDropdown class="d-inline-block" *ngIf="userLogged|async as user; else LoginButton">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+            <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            {{user.displayName?user.displayName : user.email}} 
+        <!-- si el usuario tiene un nombre muestrelo si no mostrar imei-->
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem routerLink="/panelDeControl">Panel de control</button>
+            <button ngbDropdownItem routerLink="/login" (click)="logOut()">Salir</button>
+        </div>
+    </div>
+
+    <ng-template #LoginButton>
+        <button class="btn btn-primary" routerLink="/login"> Ingresar</button>
+    </ng-template>
+</nav>
+    <ng-template #LoginButton>
+        <button class="btn btn-primary" routerLink="/login"> Ingresar</button>
+    </ng-template>
+    
