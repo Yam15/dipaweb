@@ -12,6 +12,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ChatComponent } from './components/chat/chat.component';
+
+
 //import { RegisterComponent } from './component/register/register.component';
 
 const firebaseConfig = { // conectando con app de firebase
@@ -31,7 +33,9 @@ const firebaseConfig = { // conectando con app de firebase
     RegisterComponent,
     HomeComponent,
     PageNotFoundComponent,
-    ChatComponent
+    ChatComponent,
+   
+  
   ],
   imports: [
     BrowserModule,

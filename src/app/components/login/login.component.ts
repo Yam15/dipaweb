@@ -8,6 +8,8 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent{
+[x: string]: any;
+usuario1="";
   usuario = {
     email: '',
     password: '',
@@ -22,18 +24,33 @@ export class LoginComponent{
   Ingresar() {
     const { email, password } = this.usuario;
     this.authService.login(email, password).then(user => {
-      console.log("Bienvenido ", user);
-      if(!user) {
-        alert("Datos incorrectos, si no tenes cuenta registrate!");
-        return;
-      };
-      this.router.navigate(['/panelDeControl'])
+      
+      switch(email) { 
+        
+        case "carlosguerra@gmail.com": { 
+          console.log("Bienvenido Carlos");
+          console.log("Bienvenido  Administrador", user);
+        
+      this.router.navigate(['/register'])
+           break; 
+        } 
+       case "armeriaytrasmisionesdpf@gmail.com" : { 
+        this.router.navigate(['/panelDeControl'])
+           break; 
+       } 
+        default: { 
+          if(!user) {
+            alert("Datos incorrectos, si no tenes cuenta registrate!");
+            return;
+          }
+           break; 
+        } 
+     } 
+      
     }).catch(err=>{
       console.log(err)
     })
   }
-
-
   logout() {
     this.authService.logout();
   }
