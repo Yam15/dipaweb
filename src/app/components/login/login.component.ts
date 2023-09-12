@@ -34,8 +34,8 @@ usuario1="";
       this.router.navigate(['/register'])
            break; 
         } 
-       case "armeriaytrasmisionesdpf@gmail.com" : { 
-        this.router.navigate(['/panelDeControl'])
+       case "materialmovilycarburantesdpf@gmail.com" : { 
+       // this.router.navigate(['/panelDeControl'])
            break; 
        } 
         default: { 
