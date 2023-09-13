@@ -12,6 +12,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { PcichimaltenangoComponent } from './homeprivate/pcichimaltenango/pcichimaltenango.component';
 
 
 //import { RegisterComponent } from './component/register/register.component';
@@ -34,6 +35,7 @@ const firebaseConfig = { // conectando con app de firebase
     HomeComponent,
     PageNotFoundComponent,
     ChatComponent,
+    PcichimaltenangoComponent,
    
   
   ],
