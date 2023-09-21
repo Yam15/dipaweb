@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200vw;
+    height: 100vh;
+}
+
+.contenedorletras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+.alinear{
+    text-align: center;
+}
+
+.contenedorsuperior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+.fondo {
+    height: 500px;
+    background-image: url("https://images.unsplash.com/photo-1563442744-3e17a3bf4932?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YW50aWd1YSUyMGd1YXRlbWFsYXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 60rem;
+  }
+  .apoyo {
+    
+    display: flex;
+    justify-content: center;
+  }

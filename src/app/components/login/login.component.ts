@@ -30,12 +30,15 @@ usuario1="";
         case "carlosguerra@gmail.com": { 
           console.log("Bienvenido Carlos");
           console.log("Bienvenido  Administrador", user);
+          this.router.navigate(['/panelDeControl'])
         
-      this.router.navigate(['/register'])
+      //this.router.navigate(['/register'])
            break; 
         } 
-       case "materialmovilycarburantesdpf@gmail.com" : { 
-       // this.router.navigate(['/panelDeControl'])
+       case "dipafrontpcichimaltenango@gmail.com" : { 
+         console.log("Bienvenido PCI CHIMALTENANGO");
+       //  this.irapagina
+         this.router.navigate(['/homechimaltenango'])
            break; 
        } 
         default: { 
@@ -54,4 +57,9 @@ usuario1="";
   logout() {
     this.authService.logout();
   }
+
+  //irapagina(){
+// console.log('metodo ir a pagina');
+
+  //}
 }

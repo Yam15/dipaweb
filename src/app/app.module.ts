@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -45,6 +45,8 @@ const firebaseConfig = { // conectando con app de firebase
     NgbModule,
     FormsModule, //forms
     AngularFireModule.initializeApp(firebaseConfig),
+    PdfViewerModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

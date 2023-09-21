@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
+import { PcichimaltenangoComponent } from './homeprivate/pcichimaltenango/pcichimaltenango.component';
 
 const routes: Routes = [
 //creando rutas de llamado
@@ -27,6 +28,11 @@ const routes: Routes = [
 {
   path:"home",
   component :HomeComponent
+
+},
+{
+  path:"homechimaltenango",
+  component : PcichimaltenangoComponent
 
 },
 {
