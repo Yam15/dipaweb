@@ -20,8 +20,9 @@ usuario1="";
   }
 
   constructor(private authService: AuthService, private router: Router) { }
-
+  
   Ingresar() {
+    
     const { email, password } = this.usuario;
     this.authService.login(email, password).then(user => {
       
@@ -36,14 +37,41 @@ usuario1="";
            break; 
         } 
        case "dipafrontpcichimaltenango@gmail.com" : { 
-         console.log("Bienvenido PCI CHIMALTENANGO");
+         console.log("Bienvenido PCI CHIMALTENANGO",user);
        //  this.irapagina
+         window.alert('Bienvenido PCI Chimaltenango');
          this.router.navigate(['/homechimaltenango'])
+         
            break; 
        } 
+       case "dipafrontpciprogreso@gmail.com" : { 
+        console.log("Bienvenido PCI El PROGRESO GUASTATOYA",user);
+        window.alert('Bienvenido PCI PROGRESO');
+      //  this.irapagina
+        this.router.navigate(['/homeprogreso'])
+        
+          break; 
+      } 
+      case "delegacionpuertobarriosizabal@gmail.com" : { 
+        console.log("Bienvenida delegacion Puerto Barrios",user);
+      //  this.irapagina
+        window.alert('Bienvenida Delegacion Puerto Barrios');
+        this.router.navigate(['/homedelpuertobarrios01'])
+        
+          break; 
+      } 
+      case "delegacionaeropuertolosaltos@gmail.com" : { 
+        console.log("Bienvenida delegacion los altos",user);
+      //  this.irapagina
+        window.alert('Bienvenida Delegacion Aeropuerto Los Altos');
+        this.router.navigate(['/homedelaeropuertlosaltos002'])
+        
+          break; 
+      } 
         default: { 
           if(!user) {
-            alert("Datos incorrectos, si no tenes cuenta registrate!");
+           // alert("Datos incorrectos, ingresa con el usuario y contraseña asignada!");
+            window.alert('Datos incorrectos');
             return;
           }
            break; 
@@ -57,7 +85,7 @@ usuario1="";
   logout() {
     this.authService.logout();
   }
-
+  
   //irapagina(){
 // console.log('metodo ir a pagina');
 

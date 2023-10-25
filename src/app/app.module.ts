@@ -13,6 +13,11 @@ import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { PcichimaltenangoComponent } from './homeprivate/pcichimaltenango/pcichimaltenango.component';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './shared/auth.guard';
+import { PciprogresoComponent } from './homeprivate/pciprogreso/pciprogreso.component';
+import { Delegacionpbi01Component } from './homeprivate/delegacionpbi01/delegacionpbi01.component';
+import { DelegaerolosaltosComponent } from './homeprivate/delegaerolosaltos/delegaerolosaltos.component';
 
 
 //import { RegisterComponent } from './component/register/register.component';
@@ -36,6 +41,9 @@ const firebaseConfig = { // conectando con app de firebase
     PageNotFoundComponent,
     ChatComponent,
     PcichimaltenangoComponent,
+    PciprogresoComponent,
+    Delegacionpbi01Component,
+    DelegaerolosaltosComponent,
    
   
   ],
@@ -46,7 +54,7 @@ const firebaseConfig = { // conectando con app de firebase
     FormsModule, //forms
     AngularFireModule.initializeApp(firebaseConfig),
   ],
-  providers: [],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-light " style="padding: 0 1rem; box-shadow:  0 0 5px -1px rgb(5, 1, 255);">
+<nav class="navbar navbar-light bg-light "  style="padding: 0 1rem; box-shadow:  0 1 10px -1px rgb(5, 1, 255);">
     <a class="navbar-brand" href="#" style="display: flex; align-items: center;">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdjJ7IhchXuM7SEYkeW1XKdmj6zv6nQSIhg3YLeFar7AXkAG0G1uheXbtKOj7z_EBhxYPX_yZAFlVetqJKGMPednZGZNiEI8BypJeIunHDM_BM4oOSfBdtbBNWPIj_B5eJD2f_S_2ccIbn0Axqw0RLOgnf26M5nKVqizfR4RDWFfdUI9GkWyOW0g1O/s2202/Logo%20PNC%20(1).png"
             width="50" height="50" class="d-inline-block align-top" alt="">
@@ -6,7 +6,17 @@
     DIPAWEB</a>
 
 
+
+
     <div ngbDropdown class="d-inline-block" *ngIf="userLogged|async as user; else LoginButton">
+
+        <button class="caja" *ngIf="user.email ==('dipafrontpcichimaltenango@gmail.com')" ngbDropdownItem routerLink="/homechimaltenango"> CLICK PARA IR A BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('dipafrontpciprogreso@gmail.com')" ngbDropdownItem routerLink="/homeprogreso">CLICK PARA IR A BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionpuertobarriosizabal@gmail.com')" ngbDropdownItem routerLink="/homedelpuertobarrios01">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionaeropuertolosaltos@gmail.com')" ngbDropdownItem routerLink="/homedelaeropuertlosaltos002">BASE DE DATOS</button>
+        
+        
+        
         <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
             <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30"
                 class="d-inline-block align-top" alt="">
@@ -14,14 +24,20 @@
         <!-- si el usuario tiene un nombre muestrelo si no mostrar imei-->
         </button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem routerLink="/homechimaltenango">Inicio</button>
-            <button ngbDropdownItem onclick="location.href='https://wa.me/50230232888'">Contacto Informatica</button>
+            <!-- muestra la navegacion segun la direccion del correo --> 
+            <button *ngIf="user.email ==('dipafrontpcichimaltenango@gmail.com')" ngbDropdownItem routerLink="/homechimaltenango">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('dipafrontpciprogreso@gmail.com')" ngbDropdownItem routerLink="/homeprogreso">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionpuertobarriosizabal@gmail.com')" ngbDropdownItem routerLink="/homedelpuertobarrios01">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionaeropuertolosaltos@gmail.com')" ngbDropdownItem routerLink="/homedelaeropuertlosaltos002">BASE DE DATOS</button>
+
+
+            <button ngbDropdownItem onclick="location.href='https://wa.me/50230232888'">Contacto Informatica </button>
             <button ngbDropdownItem routerLink="/login" (click)="logOut()">Salir</button>
         </div>
     </div>
 
     <ng-template #LoginButton>
-        <button class="btn btn-primary" routerLink="/login"> Ingresar</button>
+        <button style="background-color: chartreuse;;" class="btn btn-primary" routerLink="/login"> Ingresar  a DIPAWEB</button>
     </ng-template>
 </nav>
     <ng-template #LoginButton>
