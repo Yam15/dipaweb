@@ -9,14 +9,36 @@
 
 
     <div ngbDropdown class="d-inline-block" *ngIf="userLogged|async as user; else LoginButton">
+        <button class="caja" *ngIf="user.email ==('secciondeinformatica@dipaweb.com')" ngbDropdownItem routerLink="/secciondeinformaticacarlosguerra1515">BASE DE DATOS</button>
 
-        <button class="caja" *ngIf="user.email ==('dipafrontpcichimaltenango@gmail.com')" ngbDropdownItem routerLink="/homechimaltenango"> CLICK PARA IR A BASE DE DATOS</button>
-        <button  class="caja" *ngIf="user.email ==('dipafrontpciprogreso@gmail.com')" ngbDropdownItem routerLink="/homeprogreso">CLICK PARA IR A BASE DE DATOS</button>
+        <button class="caja" *ngIf="user.email ==('dipafrontpcichimaltenango@gmail.com')" ngbDropdownItem routerLink="/homechimaltenango3434EWE">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('dipafrontpciprogreso@gmail.com')" ngbDropdownItem routerLink="/homeprogreso84756GEEE">BASE DE DATOS</button>
         <button  class="caja" *ngIf="user.email ==('delegacionpuertobarriosizabal@gmail.com')" ngbDropdownItem routerLink="/homedelpuertobarrios01">BASE DE DATOS</button>
         <button  class="caja" *ngIf="user.email ==('delegacionaeropuertolosaltos@gmail.com')" ngbDropdownItem routerLink="/homedelaeropuertlosaltos002">BASE DE DATOS</button>
-        
-        
-        
+        <button  class="caja" *ngIf="user.email ==('delegacionaguascalienteschiqui@gmail.com')" ngbDropdownItem routerLink="/homedelafuascalienteschiqui02">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegaciontecunumansanmarcos@gmail.com')" ngbDropdownItem routerLink="/homedeltecunumansanmarcos0002">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionaeropuertoauroraguat@gmail.com')" ngbDropdownItem routerLink="/homedelaeropuertolaaurora0001">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionpedrodealvarado@gmail.com')" ngbDropdownItem routerLink="/homedelpedrodealvarado010101002">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionvallenuevogt@gmail.com')" ngbDropdownItem routerLink="/homevallenuevo20244">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('pcilivingston@gmail.com')" ngbDropdownItem routerLink="/homepcilivingston202121">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionmundomayapeten@gmail.com')" ngbDropdownItem routerLink="/homemundomayapeten20246">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionelcarmengt@gmail.com')" ngbDropdownItem routerLink="/homedelcarmensanmarcos20204">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionpuertoquetzal@gmail.com')" ngbDropdownItem routerLink="/homedelegacionpuertoquetzalesc01">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionsantotomasizabal@dipaweb.com')" ngbDropdownItem routerLink="/homedelsantotomasdecastillaizaba203454">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionaeropuertoretal@dipaweb.com')" ngbDropdownItem routerLink="/homedelaeropuertoretalhuleu875">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionmelchorpeten@dipaweb.com')" ngbDropdownItem routerLink="/homedelmencospeten74653r">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionaerodromopuertosanjose@dipaweb.com')" ngbDropdownItem routerLink="/homeaerodromopuertosanjose256743">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionaerodromomundomaya@dipaweb.com')" ngbDropdownItem routerLink="/homeaerodromomundomayaretalh746593">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('dipafrontpcicorintoizabal@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionpcicorinto8474312">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionsancristobaljutiapa@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionsancrisjutiapa846653">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('delegacionaedronomopuertobarrios@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionaerodromopuertobarrios8374762">BASE DE DATOS</button>
+        <button  class="caja" *ngIf="user.email ==('dipafrontpcipajapitasanmarcos@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionpajapitapci57764">BASE DE DATOS</button>
+       
+
+
+
+
+
         <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
             <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30"
                 class="d-inline-block align-top" alt="">
@@ -25,10 +47,39 @@
         </button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <!-- muestra la navegacion segun la direccion del correo --> 
-            <button *ngIf="user.email ==('dipafrontpcichimaltenango@gmail.com')" ngbDropdownItem routerLink="/homechimaltenango">BASE DE DATOS</button>
-            <button *ngIf="user.email ==('dipafrontpciprogreso@gmail.com')" ngbDropdownItem routerLink="/homeprogreso">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('dipafrontpcichimaltenango@gmail.com')" ngbDropdownItem routerLink="/homechimaltenango3434EWE">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('dipafrontpciprogreso@gmail.com')" ngbDropdownItem routerLink="/homeprogreso84756GEEE">BASE DE DATOS</button>
             <button *ngIf="user.email ==('delegacionpuertobarriosizabal@gmail.com')" ngbDropdownItem routerLink="/homedelpuertobarrios01">BASE DE DATOS</button>
             <button *ngIf="user.email ==('delegacionaeropuertolosaltos@gmail.com')" ngbDropdownItem routerLink="/homedelaeropuertlosaltos002">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionaguascalienteschiqui@gmail.com')" ngbDropdownItem routerLink="/homedelafuascalienteschiqui02">DATOS DELEGACION</button>
+            <button *ngIf="user.email ==('delegacionaguascalienteschiqui@gmail.com')" ngbDropdownItem routerLink="/homepcivadohondo448226547">PCI VADO HONDO</button>
+
+
+            <button *ngIf="user.email ==('delegaciontecunumansanmarcos@gmail.com')" ngbDropdownItem routerLink="/homedeltecunumansanmarcos0002">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionaeropuertoauroraguat@gmail.com')" ngbDropdownItem routerLink="/homedelaeropuertolaaurora0001">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionpedrodealvarado@gmail.com')" ngbDropdownItem routerLink="/homedelpedrodealvarado010101002">DATOS DELEGACION</button>
+            <button *ngIf="user.email ==('delegacionpedrodealvarado@gmail.com')" ngbDropdownItem routerLink="/homepcipasaco6468jdhf">PCI PASACO</button>
+
+
+            <button *ngIf="user.email ==('delegacionvallenuevogt@gmail.com')" ngbDropdownItem routerLink="/homevallenuevo20244">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('pcilivingston@gmail.com')" ngbDropdownItem routerLink="/homepcilivingston202121">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionmundomayapeten@gmail.com')" ngbDropdownItem routerLink="/homemundomayapeten20246">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionelcarmengt@gmail.com')" ngbDropdownItem routerLink="/homedelcarmensanmarcos20204">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionpuertoquetzal@gmail.com')" ngbDropdownItem routerLink="/homedelegacionpuertoquetzalesc01">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionsantotomasizabal@dipaweb.com')" ngbDropdownItem routerLink="/homedelsantotomasdecastillaizaba203454">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionaeropuertoretal@dipaweb.com')" ngbDropdownItem routerLink="homedelaeropuertoretalhuleu875">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionmelchorpeten@dipaweb.com')" ngbDropdownItem routerLink="/homedelmencospeten74653r">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionaerodromopuertosanjose@dipaweb.com')" ngbDropdownItem routerLink="/homeaerodromopuertosanjose256743">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionaerodromomundomaya@dipaweb.com')" ngbDropdownItem routerLink="/homeaerodromomundomayaretalh746593">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('dipafrontpcicorintoizabal@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionpcicorinto8474312">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('delegacionsancristobaljutiapa@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionsancrisjutiapa846653">DATOS DELEGACION</button>
+            <button *ngIf="user.email ==('delegacionsancristobaljutiapa@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionsancrisjutiapa846653">PCI JEREZ</button>
+            <button *ngIf="user.email ==('delegacionsancristobaljutiapa@dipaweb.com')" ngbDropdownItem routerLink="/homepcijerez482236fdsa">PCI JEREZ</button>
+
+            <button *ngIf="user.email ==('delegacionaedronomopuertobarrios@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionaerodromopuertobarrios8374762">BASE DE DATOS</button>
+            <button *ngIf="user.email ==('dipafrontpcipajapitasanmarcos@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionpajapitapci57764">BASE DE DATOS</button>
+
+
 
 
             <button ngbDropdownItem onclick="location.href='https://wa.me/50230232888'">Contacto Informatica </button>

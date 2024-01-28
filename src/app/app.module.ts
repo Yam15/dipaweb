@@ -18,6 +18,28 @@ import { AuthGuard } from './shared/auth.guard';
 import { PciprogresoComponent } from './homeprivate/pciprogreso/pciprogreso.component';
 import { Delegacionpbi01Component } from './homeprivate/delegacionpbi01/delegacionpbi01.component';
 import { DelegaerolosaltosComponent } from './homeprivate/delegaerolosaltos/delegaerolosaltos.component';
+import { Delegacioncch02Component } from './homeprivate/delegacioncch02/delegacioncch02.component';
+import { DelegaciontusmComponent } from './homeprivate/delegaciontusm/delegaciontusm.component';
+import { DelegacionaeroauroraComponent } from './homeprivate/delegacionaeroaurora/delegacionaeroaurora.component';
+import { DelegacionpedroalvaradoComponent } from './homeprivate/delegacionpedroalvarado/delegacionpedroalvarado.component';
+import { DelegacionvallenuevoComponent } from './homeprivate/delegacionvallenuevo/delegacionvallenuevo.component';
+import { DelegacionelcarmenComponent } from './homeprivate/delegacionelcarmen/delegacionelcarmen.component';
+import { PcilivingstonComponent } from './homeprivate/pcilivingston/pcilivingston.component';
+import { PetenComponent } from './homeprivate/peten/peten.component';
+import { DelegacionpuertoquetzalComponent } from './homeprivate/delegacionpuertoquetzal/delegacionpuertoquetzal.component';
+import { DelegacionsanttomascastComponent } from './homeprivate/delegacionsanttomascast/delegacionsanttomascast.component';
+import { DelegacionaeropuertoretalComponent } from './homeprivate/delegacionaeropuertoretal/delegacionaeropuertoretal.component';
+import { DelegacionmencospetenComponent } from './homeprivate/delegacionmencospeten/delegacionmencospeten.component';
+import { DelegacionaerodromopuertosanjoseComponent } from './homeprivate/delegacionaerodromopuertosanjose/delegacionaerodromopuertosanjose.component';
+import { DelegacionaerodromomundomayaretalComponent } from './homeprivate/delegacionaerodromomundomayaretal/delegacionaerodromomundomayaretal.component';
+import { DelegacionpcicorintoComponent } from './homeprivate/delegacionpcicorinto/delegacionpcicorinto.component';
+import { DelegacionsancrisjutiapaComponent } from './homeprivate/delegacionsancrisjutiapa/delegacionsancrisjutiapa.component';
+import { DelegacionaedronomopuertobarriosComponent } from './homeprivate/delegacionaedronomopuertobarrios/delegacionaedronomopuertobarrios.component';
+import { DelegacionpcipajapitasanmarcosComponent } from './homeprivate/delegacionpcipajapitasanmarcos/delegacionpcipajapitasanmarcos.component';
+import { PcivadohondoComponent } from './homeprivate/pcivadohondo/pcivadohondo.component';
+import { PcipasacojutiapaComponent } from './homeprivate/pcipasacojutiapa/pcipasacojutiapa.component';
+import { PcijerezComponent } from './homeprivate/pcijerez/pcijerez.component';
+import { SecciondeinformaticaComponent } from './homeprivate/secciondeinformatica/secciondeinformatica.component';
 
 
 //import { RegisterComponent } from './component/register/register.component';
@@ -44,6 +66,28 @@ const firebaseConfig = { // conectando con app de firebase
     PciprogresoComponent,
     Delegacionpbi01Component,
     DelegaerolosaltosComponent,
+    Delegacioncch02Component,
+    DelegaciontusmComponent,
+    DelegacionaeroauroraComponent,
+    DelegacionpedroalvaradoComponent,
+    DelegacionvallenuevoComponent,
+    DelegacionelcarmenComponent,
+    PcilivingstonComponent,
+    PetenComponent,
+    DelegacionpuertoquetzalComponent,
+    DelegacionsanttomascastComponent,
+    DelegacionaeropuertoretalComponent,
+    DelegacionmencospetenComponent,
+    DelegacionaerodromopuertosanjoseComponent,
+    DelegacionaerodromomundomayaretalComponent,
+    DelegacionpcicorintoComponent,
+    DelegacionsancrisjutiapaComponent,
+    DelegacionaedronomopuertobarriosComponent,
+    DelegacionpcipajapitasanmarcosComponent,
+    PcivadohondoComponent,
+    PcipasacojutiapaComponent,
+    PcijerezComponent,
+    SecciondeinformaticaComponent,
    
   
   ],
