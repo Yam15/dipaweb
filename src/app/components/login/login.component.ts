@@ -210,10 +210,19 @@ usuario1="";
           break; 
       }
 
-      case "" : { 
+      case "secciondeinformatica@dipaweb.com" : { 
         console.log("Bienvenido Jefe",user);
       //  this.irapagina
-        window.alert('Bienvenido Jefe');
+        window.alert('Bienvenido Administrador');
+        this.router.navigate(['/secciondeinformaticacarlosguerra1515'])
+        
+          break; 
+      }
+
+      case "materialmovildpf@dipaweb.com" : { 
+        console.log("Bienvenido MATERIAL MOVIL Y CARBURANTES",user);
+      //  this.irapagina
+        window.alert('Bienvenido MATERIAL MOVIL Y CARBURANTES');
         this.router.navigate(['/secciondeinformaticacarlosguerra1515'])
         
           break; 
@@ -228,6 +237,25 @@ usuario1="";
           break; 
       }
 
+      case "jefeapoyoylogistica@dipaweb.com" : { 
+        console.log("Bienvenido Jefe de Apoyo y Logistica",user);
+      //  this.irapagina
+        window.alert('Bienvenido Jefe de Apoyo y Logistica');
+        this.router.navigate(['/secciondeinformaticacarlosguerra1515'])
+        
+          break; 
+      }
+
+      case "jefedipafront@dipaweb.com" : { 
+        console.log("Bienvenido JEFE de DIVISION",user);
+      //  this.irapagina
+        window.alert('Bienvenido JEFE DE DIVISION');
+        this.router.navigate(['/secciondeinformaticacarlosguerra1515'])
+        
+          break; 
+      }
+
+
 
       case "delegacionpedrodealvarado@gmail.com" : { 
         console.log("Bienvenida delegacion Pedro de Alvarado",user);
@@ -238,6 +266,23 @@ usuario1="";
           break; 
       }
 
+      case "delpcipasaco@dipaweb.com" : { 
+        console.log("Bienvenido Puesto de Control Pasaco",user);
+      //  this.irapagina
+        window.alert('Bienvenido Puesto de Control Pasaco');
+        this.router.navigate(['/homepcipasaco6468jdhf'])
+        
+          break; 
+      }
+
+      case "pciescuintla@dipaweb.com" : { 
+        console.log("Bienvenido PCI ESCUINTLA",user);
+      //  this.irapagina
+        window.alert('Bienvenido PCI ESCUINTLA');
+        this.router.navigate(['homedelpciescuinltla5484754414'])
+        
+          break; 
+      }
 
 
         default: { 

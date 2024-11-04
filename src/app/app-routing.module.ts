@@ -31,6 +31,11 @@ import { PcivadohondoComponent } from './homeprivate/pcivadohondo/pcivadohondo.c
 import { PcipasacojutiapaComponent } from './homeprivate/pcipasacojutiapa/pcipasacojutiapa.component';
 import { PcijerezComponent } from './homeprivate/pcijerez/pcijerez.component';
 import { SecciondeinformaticaComponent } from './homeprivate/secciondeinformatica/secciondeinformatica.component';
+import { PciescuintlaComponent } from './homeprivate/pciescuintla/pciescuintla.component';
+import { CARBURANTESComponent } from './homeprivate/carburantes/carburantes.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { NominaDeJefesComponent } from './homeprivate/nomina-de-jefes/nomina-de-jefes.component';
+import { DatosGeneralesComponent } from './datos-generales/datos-generales.component';
 
 
 
@@ -57,6 +62,11 @@ const routes: Routes = [
 {
   path:"home",
   component :HomeComponent
+
+},
+{
+  path:"chat",
+  component :ChatComponent
 
 },
 {
@@ -255,6 +265,38 @@ const routes: Routes = [
  
 
 },
+
+{
+  path:"homedelpciescuinltla5484754414",
+  canActivate: [AuthGuard],
+  component : PciescuintlaComponent,
+ 
+
+},
+
+{
+  path:"homeseccioncarburantes1545645884sd3eddf",
+  canActivate: [AuthGuard],
+  component : CARBURANTESComponent,
+ 
+
+},
+{
+  path:"homeseccionnominadejefesy7547yurhhf77uyr3eddf",
+  canActivate: [AuthGuard],
+  component : NominaDeJefesComponent,
+ 
+
+},
+
+{
+  path:"homesecciondatosurgentes7547yjjds7566586jnfmf",
+  canActivate: [AuthGuard],
+  component : DatosGeneralesComponent,
+ 
+
+},
+
 {
   path:"**",
   component :PageNotFoundComponent

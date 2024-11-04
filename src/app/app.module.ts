@@ -40,6 +40,10 @@ import { PcivadohondoComponent } from './homeprivate/pcivadohondo/pcivadohondo.c
 import { PcipasacojutiapaComponent } from './homeprivate/pcipasacojutiapa/pcipasacojutiapa.component';
 import { PcijerezComponent } from './homeprivate/pcijerez/pcijerez.component';
 import { SecciondeinformaticaComponent } from './homeprivate/secciondeinformatica/secciondeinformatica.component';
+import { PciescuintlaComponent } from './homeprivate/pciescuintla/pciescuintla.component';
+import { CARBURANTESComponent } from './homeprivate/carburantes/carburantes.component';
+import { NominaDeJefesComponent } from './homeprivate/nomina-de-jefes/nomina-de-jefes.component';
+import { DatosGeneralesComponent } from './datos-generales/datos-generales.component';
 
 
 //import { RegisterComponent } from './component/register/register.component';
@@ -88,6 +92,10 @@ const firebaseConfig = { // conectando con app de firebase
     PcipasacojutiapaComponent,
     PcijerezComponent,
     SecciondeinformaticaComponent,
+    PciescuintlaComponent,
+    CARBURANTESComponent,
+    NominaDeJefesComponent,
+    DatosGeneralesComponent,
    
   
   ],

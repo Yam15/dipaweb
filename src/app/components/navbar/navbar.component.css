@@ -7,3 +7,6 @@
     background-color: orange;
     
     }
+    dialog::backdrop {
+     background: rgba(0, 89, 255, 0.1);
+    }
