@@ -1,24 +1,26 @@
+<html>
+<div class="">
+</div>
+<div>
+  <label></label>
+</div>
 <div class="container">
-    <div class="card text-center">
-      <div class="card-header">
-        <b> LOGIN</b>
-      </div>
-      <div class="card-body p-4">
-        <label style="float: left;">Email</label>
-        <input class="form-control m-2" type="email" placeholder="ingrese su email" [(ngModel)]="usuario.email">
-  
-        <label style="float: left;">Password</label>
-        <input class="form-control m-2" type="password" placeholder="ingrese su password" [(ngModel)]="usuario.password">
+  <div class="card-body p-4">
+    <div class="afiche2"></div>
+    <label style="float: left;">Email</label>
+    <input class="form-control m-2" type="email" placeholder="ingrese su email" [(ngModel)]="usuario.email">
 
-        <button class="btn btn-primary btn-block m-2" (click)="Ingresar()">Ingresar</button>
-        <p></p>
-        <label>Ingresa Con el Correo y la contrañena asignada</label>
-        <p></p>
-        <label>Por la Seccion de Informatica DIPAFRONT </label>
-        <button  class="caja" ngbDropdownItem onclick="location.href='https://wa.me/50230232888'">Contacto Informatica</button>
-       <!-- <label>Aun no tienes cuenta? <a routerLink="/register">Registrarse</a></label> -->
-      </div>
-  
-  
-    </div>
+    <label style="float: left;">Password</label>
+    <input class="form-control m-2" type="password" placeholder="ingrese su password" [(ngModel)]="usuario.password">
+
+    <button class="btn btn-primary btn-block m-2" (click)="Ingresar()">Ingresar</button>
+    <p></p>
+    <label style="text-align: center;">Ingresa Con el Correo y la contrañena asignada por la seccion de informatica</label>
+
+    <p></p>
+    <label style="text-align: center;">Contacto con la seccion de  informatica</label>
+    <button  class="caja bi-align-center" ngbDropdownItem onclick="location.href='https://wa.me/50230232888'">.</button>
+   <!-- <label>Aun no tienes cuenta? <a routerLink="/register">Registrarse</a></label> -->
   </div>
+</div>
+</html>
