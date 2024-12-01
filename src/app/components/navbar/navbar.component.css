@@ -1,23 +1,43 @@
+
 .navbar {
+    display: flex;
     background-image: url('src\app\components\imagenes\borde1.png');
     background-size:contain;
     background-position:center;
     background-repeat:no-repeat;
-    width:auto;
+    width:100%;
     height:100%;
-
+    position:relative;
+    margin-bottom: 0;
+    
     }
 
 .caja {
-    display: flex;
+    display:flex;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    width: 300px;
+    height: 75%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:transparent;
-    position:center;
+    font-size: x-small;
+    background-color:black;
+    color: white;
+    border-color: rgb(255, 255, 255);
+    border-width: rgb(255, 255, 255);
+    border-width: 2px;
+    border-style: dashed;
     
     }
+    .caja2 {
+        display:contents;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color:transparent;
+        position:absolute;
+        
+        }
     dialog::backdrop {
      background: rgba(0, 89, 255, 0.1);
     }
@@ -43,6 +63,43 @@
             justify-content: center;
             align-items:first baseline;  
                }
+               .img-logoinicio {
+                object-fit:scale-down;
+                width:auto;
+                height:100%;
+                    background-image: url('https://i.gifer.com/origin/5a/5ab98406cc6c8fbba9ddb014c2bcdb80_w200.gif');
+                    background-size:cover;
+                    background-position:center;
+                    background-repeat:no-repeat;	   
+                    justify-content: center;
+                    align-items:first baseline;  
+                       }
+
+                       .img-logoinicios {
+                        object-fit:scale-down;
+                        width:auto;
+                        height:100%;
+                            background-image: url('https://i.makeagif.com/media/3-01-2016/xvNVao.gif');
+                            background-size:cover;
+                            background-position:center;
+                            background-repeat:no-repeat;	   
+                            justify-content: center;
+                            align-items:first baseline;  
+                               }
+                               .img-acercade {
+                                object-fit:scale-down;
+                                width:600px;
+                                height:400px;
+                                    background-image: url('https://i0.wp.com/i.postimg.cc/mrZXfX2x/9-Sapphire-Streams-Blue-Midnight-Bloom.gif?ssl=1');
+                                    background-size:cover;
+                                    background-position:center;
+                                    background-repeat:no-repeat;	   
+                                    justify-content: center;
+                                    align-items:first baseline; 
+                                    color:white; 
+                                       }
+
+
     .remove-bg{
 
         filter: brightness(1.1);
@@ -55,12 +112,13 @@
     }
 
     .menu{
+        display:contents;
         margin-top: 0;
         margin-bottom:0;
         padding-left: 0;
         list-style: none;
         display: flex;
-        gap: 2em;
+        gap: 0.1em;
     }
 
     .container{
@@ -80,13 +138,17 @@
         bottom: 0;
     }
     .afiche {
-
+        display: flex;
         background-image: url('src\app\components\imagenes\bordeinferior.png');
         background-size:contain;
         background-position:center;
         background-repeat:no-repeat;
         width:100%;
         height:100%;
+        margin-top: auto;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
         margin-top: auto;
     
            }
@@ -102,3 +164,5 @@
             text-align: center;
             background-color: rgba(0, 0, 0, 0.5); /* Añadir para conseguir el fondo con opacidad */
         }
+     
+        

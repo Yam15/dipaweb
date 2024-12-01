@@ -284,6 +284,15 @@ usuario1="";
           break; 
       }
 
+      case "inventariodpf@dipaweb.com" : { 
+        console.log("Bienvenido Inventarios DIPAFRONT",user);
+      //  this.irapagina
+        window.alert('Bienvenido Inventarios DIPAFRONT');
+        this.router.navigate(['secciondeinformaticacarlosguerra1515'])
+        
+          break; 
+      }
+
 
         default: { 
           if(!user) {

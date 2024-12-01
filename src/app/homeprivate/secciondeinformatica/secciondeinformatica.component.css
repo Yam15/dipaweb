@@ -2,8 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200vw;
-    height: 70vh;
+    width: 10vw;
+    height: 10vh;
+    align-content: center;
+    border-color: black;
+    border-width: black;
+    border-width: 5px;
+    border-style: dashed;
    
 }
 
@@ -23,21 +28,116 @@
 
 .contenedorsuperior{
     display: flex;
+    background-image: url('src\app\components\imagenes\fondoboton1.gif');
+    background-size:auto;
+    background-position:center;
     justify-content: center;
     align-items: center;
     size: auto;
     background-color: rgb(0, 0, 0);
     color: white;
     width: 100%;
-    height: 50px;
+    height:100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contenedoraeropuerto{
+    display: flex;
+    background-image: url('src\app\components\imagenes\fondocielo1.gif');
+    background-size:auto;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    size: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    height:100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+}
+
+.contenedordelegacion{
+    display: flex;
+    background-image: url('src\app\components\imagenes\delegaciones.gif');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    size: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    height:100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+}
+
+.contenedormar{
+    display: flex;
+    background-image: url('src\app\components\imagenes\mar1.gif');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    size: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    height:100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
 }
 
 .caja {
     display: block;
     text-align: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     font-family: fantasy;
-    background-color: orange;
+    background-color:darkblue;
+    color: white;
+    border-radius: 100px;
     
     }
+
+    .caja2 {
+        display: block;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-family: fantasy;
+        background-color:rgb(36, 78, 156);
+        color: white;
+        border-radius: 100px;
+        
+        }
+    
+        .caja3 {
+            display: block;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-family: fantasy;
+            background-color:darkblue;
+            color: white;
+            border-radius: 100px;
+            
+            }
+            .caja4 {
+                display: block;
+                text-align: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                font-family: fantasy;
+                background-color:darkblue;
+                color: white;
+                border-radius: 100px;
+                
+                }

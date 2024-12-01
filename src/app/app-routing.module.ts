@@ -36,6 +36,7 @@ import { CARBURANTESComponent } from './homeprivate/carburantes/carburantes.comp
 import { ChatComponent } from './components/chat/chat.component';
 import { NominaDeJefesComponent } from './homeprivate/nomina-de-jefes/nomina-de-jefes.component';
 import { DatosGeneralesComponent } from './datos-generales/datos-generales.component';
+import { ProtocolosComponent } from './components/protocolos/protocolos.component';
 
 
 
@@ -62,6 +63,11 @@ const routes: Routes = [
 {
   path:"home",
   component :HomeComponent
+
+},
+{
+  path:"homeprotocolos",
+  component :ProtocolosComponent
 
 },
 {

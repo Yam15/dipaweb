@@ -12,18 +12,22 @@
             width="auto" height="auto"alt=""></div>
           </body>
    </body>
-   <div class="caja" style=" width: 5rem; color: white;font-weight: bold ; font-display:initial;">
+   <div class="caja2" style=" width: 5rem; color:transparent">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  <div class="caja2" style=" width: 5rem; color: white;font-weight: bold ; font-display:initial;">
     DIPAWEB
   </div>
     <!-- <button  routerLink="/chat">CHAT</button> -->
 
 
     <div ngbDropdown class="d-inline-block" *ngIf="userLogged|async as user; else LoginButton">
-        <button class="caja" *ngIf="user.email ==('secciondeinformatica@dipaweb.com')" ngbDropdownItem routerLink="/secciondeinformaticacarlosguerra1515">BASE DE DATOS</button>
+        <button class="caja " *ngIf="user.email ==('secciondeinformatica@dipaweb.com')" ngbDropdownItem routerLink="/secciondeinformaticacarlosguerra1515">BASE DE DATOS</button>
         
         <button class="caja" *ngIf="user.email ==('jefeapoyoylogistica@dipaweb.com')" ngbDropdownItem routerLink="/secciondeinformaticacarlosguerra1515">BASE DE DATOS</button>
         <button class="caja" *ngIf="user.email ==('materialmovildpf@dipaweb.com')" ngbDropdownItem routerLink="/secciondeinformaticacarlosguerra1515">BASE DE DATOS</button>
-
+        <button class="caja" *ngIf="user.email ==('inventariodpf@dipaweb.com')" ngbDropdownItem routerLink="/secciondeinformaticacarlosguerra1515">BASE DE DATOS</button>
 
         <button class="caja" *ngIf="user.email ==('dipafrontpcichimaltenango@gmail.com')" ngbDropdownItem routerLink="/homechimaltenango3434EWE">BASE DE DATOS</button>
         <button  class="caja" *ngIf="user.email ==('dipafrontpciprogreso@gmail.com')" ngbDropdownItem routerLink="/homeprogreso84756GEEE">BASE DE DATOS</button>
@@ -53,14 +57,18 @@
 
 
 
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-            <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30"
+        <button class=" img-logoinicio btn-outline-primary" style="color: white;" id="dropdownBasic1" ngbDropdownToggle>
+            <img style="border-radius: 100%; background-color: blue;" *ngIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30"
                 class="d-inline-block align-top" alt="">
             {{user.displayName?user.displayName : user.email}} 
         <!-- si el usuario tiene un nombre muestrelo si no mostrar imei-->
         </button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button style="background-color:rgba(0, 0, 255, 0.74)" class="btn btn-primary" routerLink="/home"> Inicio</button>
+        <button style="background-color:rgba(0, 0, 255, 0.74)" class="btn btn-primary" routerLink="/login" (click)="logOut()">Salir</button>
+
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style="border-color: black; border-width:2px; border-width: 2px; background-color:white">
             <!-- muestra la navegacion segun la direccion del correo --> 
+           
             <button *ngIf="user.email ==('dipafrontpcichimaltenango@gmail.com')" ngbDropdownItem routerLink="/homechimaltenango3434EWE">BASE DE DATOS</button>
             <button *ngIf="user.email ==('dipafrontpciprogreso@gmail.com')" ngbDropdownItem routerLink="/homeprogreso84756GEEE">BASE DE DATOS</button>
             <button *ngIf="user.email ==('delegacionpuertobarriosizabal@gmail.com')" ngbDropdownItem routerLink="/homedelpuertobarrios01">BASE DE DATOS</button>
@@ -88,7 +96,6 @@
             <button *ngIf="user.email ==('delegacionaerodromopuertosanjose@dipaweb.com')" ngbDropdownItem routerLink="/homeaerodromopuertosanjose256743">BASE DE DATOS</button>
             <button *ngIf="user.email ==('delegacionaerodromomundomaya@dipaweb.com')" ngbDropdownItem routerLink="/homeaerodromomundomayaretalh746593">BASE DE DATOS</button>
             <button *ngIf="user.email ==('dipafrontpcicorintoizabal@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionpcicorinto8474312">BASE DE DATOS</button>
-
             <button *ngIf="user.email ==('delegacionsancristobaljutiapa@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionsancrisjutiapa846653">DATOS DELEGACION</button>
             <button *ngIf="user.email ==('delegacionsancristobaljutiapa@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionsancrisjutiapa846653">DELEGACION SAN CRISTOBAL</button>
             <button *ngIf="user.email ==('delegacionsancristobaljutiapa@dipaweb.com')" ngbDropdownItem routerLink="/homepcijerez482236fdsa">PCI JEREZ</button>
@@ -97,14 +104,15 @@
             <button *ngIf="user.email ==('delegacionaedronomopuertobarrios@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionaerodromopuertobarrios8374762">BASE DE DATOS</button>
             <button *ngIf="user.email ==('dipafrontpcipajapitasanmarcos@dipaweb.com')" ngbDropdownItem routerLink="/homedelegacionpajapitapci57764">BASE DE DATOS</button>
             <button *ngIf="user.email ==('pciescuintla@dipaweb.com')" ngbDropdownItem routerLink="/homedelpciescuinltla5484754414">BASE DE DATOS</button>
-
-            <button ngbDropdownItem routerLink="homesecciondatosurgentes7547yjjds7566586jnfmf">Datos Urgentes</button>
+ 
+            <button *ngIf="user.email ==('secciondeinformatica@dipaweb.com')" ngbDropdownItem routerLink="/homesecciondatosurgentes7547yjjds7566586jnfmf">PRESENTACION</button>
+            <button *ngIf="user.email ==('inventariodpf@dipaweb.com')" ngbDropdownItem routerLink="/homesecciondatosurgentes7547yjjds7566586jnfmf">PRESENTACION</button>
+            <!-- button ngbDropdownItem routerLink="homesecciondatosurgentes7547yjjds7566586jnfmf">Datos Urgentes</button -->
             <button ngbDropdownItem routerLink="homeseccionnominadejefesy7547yurhhf77uyr3eddf">Nomina Jefes-Encargados</button>
             <button ngbDropdownItem routerLink="homeseccioncarburantes1545645884sd3eddf">CARBURANTES</button>
             <button ngbDropdownItem onclick="location.href='https://wa.me/50230232888'">Contacto Informatica </button>
             <button onclick="window.mydialog.showModal();">Acerca de</button>
             <dialog id="mydialog">
-                
 	        <p>IMPLEMENTANDO SISTEMAS INFORMATICOS., DESARROLLADO POR EL AGENTE JUAN CARLOS TAJTAJ GUERRA PARA PROTEGER Y SERVIR </p>
             <P>EN DESARROLLO APP PARA CONTROL DE ARMERIAS</P>
             <form method="dialog">
@@ -116,13 +124,28 @@
     </div>
     
     
-    <ng-template #LoginButton >
+    <ng-template #LoginButton>
     
-        <body class="transparente">
+        <body class="menu transparente">
         <img src="https://cdn-icons-png.flaticon.com/512/5600/5600595.png" 
          width="40" height="40"alt="">
-        <button style="background-color:blue;;" class="btn btn-primary" routerLink="/login"> Iniciar Sesion</button>
-        <button style="background-color:rgb(0, 0, 0);;" class="btn btn-primary" routerLink="/home"> Inicio</button>
+        <button style="background-color:blue;" class="img-logoinicios btn btn-primary" routerLink="/login"> Iniciar Sesion</button>
+        <button style="background-color:black" class="btn btn-primary" routerLink="/home"> Inicio</button>
+        <button style="background-color:black" class="btn btn-primary" routerLink="/homeprotocolos"> Protocolos</button>
+        <button style="background-color:rgb(0, 0, 0);" class="btn btn-primary" onclick="window.mydialog.showModal();">Acerca de</button>
+            <dialog class="img-acercade"  id="mydialog" style=" text-align: center;">
+            <P>DIPAWEB aplicacion web para el control y facilitacion del intercambio
+                <br> de informacion de la Division de Puertos, Aeropuertos y Puestos
+                <br> fronterizos DIPAFRONT 
+            </P>
+	        <p>IMPLEMENTANDO SISTEMAS INFORMATICOS
+            <br>DESARROLLADO POR EL AGENTE DE POLICIA CARLOS GUERRA PARA PROTEGER Y SERVIR </p>
+            <P>Porque Jehová da la sabiduría y de su boca vienen el conocimiento y el entendimiento.
+                <br>GUATEMALA 2024</P>
+            <form method="dialog">
+                <button>Cerrar</button>
+            </form>
+        </dialog>
         </body>
     </ng-template>
    

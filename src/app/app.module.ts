@@ -44,6 +44,7 @@ import { PciescuintlaComponent } from './homeprivate/pciescuintla/pciescuintla.c
 import { CARBURANTESComponent } from './homeprivate/carburantes/carburantes.component';
 import { NominaDeJefesComponent } from './homeprivate/nomina-de-jefes/nomina-de-jefes.component';
 import { DatosGeneralesComponent } from './datos-generales/datos-generales.component';
+import { ProtocolosComponent } from './components/protocolos/protocolos.component';
 
 
 //import { RegisterComponent } from './component/register/register.component';
@@ -96,6 +97,7 @@ const firebaseConfig = { // conectando con app de firebase
     CARBURANTESComponent,
     NominaDeJefesComponent,
     DatosGeneralesComponent,
+    ProtocolosComponent,
    
   
   ],
